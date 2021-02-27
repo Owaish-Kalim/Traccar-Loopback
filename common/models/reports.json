@@ -1,0 +1,56 @@
+{
+  "name": "Reports",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "speed": {
+      "type": "number"
+    },
+    "signalStrength": {
+      "type": "number"
+    },
+    "batteryLevel": {
+      "type": "number"
+    },
+    "enterGeofenceArea": {
+      "type": "boolean"
+    },
+    "ignition": {
+      "type": "boolean"
+    },
+    "powerStatus": {
+      "type": "string"
+    },
+    "odometerReading": {
+      "type": "number"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "updatedAt": {
+      "type": "date"
+    },
+    "event": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "device": {
+      "type": "belongsTo",
+      "model": "device",
+      "foreignKey": "deviceId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

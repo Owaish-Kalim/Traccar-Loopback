@@ -1,0 +1,39 @@
+{
+  "name": "notifications",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "always": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "notificators": {
+      "type": "string",
+      "required": "true",
+      "default": "web"
+    },
+    "calendarId": {
+      "type": "number"
+    },
+    "attributes": {
+      "type": "object"
+    },
+    "createdAt": {
+      "type": "date",
+      "dataType": "timestamp",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

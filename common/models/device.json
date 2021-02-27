@@ -1,0 +1,79 @@
+{
+  "name": "device",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "uniqueId": {
+      "type": "string"
+    },
+    "deviceId": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    },
+    "lastUpdate": {
+      "type": "date",
+      "dataType": "timestamp",
+      "defaultFn": "now"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "positionId": {
+      "type": "number"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "geofenceIds": {
+      "type": "string"
+    },
+    "attributes": {
+      "type": "string"
+    },
+    "currentSpeed": {
+      "type": "number"
+    },
+    "currentDistance": {
+      "type": "number"
+    },
+    "createdAt": {
+      "type": "date",
+      "dataType": "timestamp",
+      "defaultFn": "now"
+    },
+    "updatedAt": {
+      "type": "date",
+      "dataType": "timestamp",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "group": {
+      "type": "belongsTo",
+      "model": "Group",
+      "foreignKey": "groupId"
+    },
+    "reports": {
+      "type": "hasMany",
+      "model": "Reports",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

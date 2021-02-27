@@ -1,0 +1,33 @@
+{
+  "name": "Group",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date",
+      "dataType": "timestamp",
+      "defaultFn": "now"
+    },
+    "updatedAt": {
+      "type": "date",
+      "dataType": "timestamp",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "devices": {
+      "type": "hasMany",
+      "model": "device",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

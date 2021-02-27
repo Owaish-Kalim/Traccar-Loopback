@@ -1,0 +1,8 @@
+{
+    "url" : "http://srv-dx00.mcpl.ga:8082/api/",
+    "username" : "admin",
+    "password" : "pass@123",
+    "uri" : "ws://srv-dx00.mcpl.ga:8082/api/socket",
+    "url1" : "http://localhost:3000/api/devices",
+    "url2" : "http://localhost:3000/api/Reports"
+}

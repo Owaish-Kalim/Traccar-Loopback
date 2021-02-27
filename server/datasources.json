@@ -1,0 +1,20 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "db_movam": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "db_movam",
+    "password": "",
+    "name": "db_movam",
+    "user": "",
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "useCreateIndex": true,
+    "useFindAndModify": false,
+    "connector": "mongodb"
+  }
+}

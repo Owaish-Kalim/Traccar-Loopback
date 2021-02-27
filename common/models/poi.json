@@ -1,0 +1,34 @@
+{
+  "name": "POI",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "co-ordinate": {
+      "type": "geopoint"
+    },
+    "co-ordinates": {
+      "type": [
+        "geopoint"
+      ]
+    },
+    "createdAt": {
+      "type": "date",
+      "dataType": "timestamp",
+      "defaultFn": "now"
+    },
+    "createdBy": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
